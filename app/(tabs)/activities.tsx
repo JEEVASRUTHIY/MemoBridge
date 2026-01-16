@@ -70,6 +70,10 @@ export default function ActivitiesScreen() {
     if (item.title === "Light Exercises") {
   router.push("/light-exercises");
 }
+    if (item.title === "Daily Diary") {
+  router.push("/daily-diary");
+}
+
 
             }}
           >
