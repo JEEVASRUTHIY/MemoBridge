@@ -9,9 +9,9 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Audio } from "expo-av";
 
 const moods = [
-  { label: "Calm", emoji: "😌", sound: require("../../assets/audio/calm.mp3") },
-  { label: "Happy", emoji: "😊", sound: require("../../assets/audio/happy.mp3") },
-  { label: "Sad", emoji: "😔", sound: require("../../assets/audio/sad.mp3") },
+  { label: "Calm", emoji: "😌", sound: require("../assets/audio/calm.mp3") },
+  { label: "Happy", emoji: "😊", sound: require("../assets/audio/happy.mp3") },
+  { label: "Sad", emoji: "😔", sound: require("../assets/audio/sad.mp3") },
 ];
 
 export default function MusicTherapyScreen() {

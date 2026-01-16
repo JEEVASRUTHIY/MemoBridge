@@ -13,7 +13,7 @@ export default function TabLayout() {
 
           if (route.name === "home") iconName = "home";
           else if (route.name === "activities") iconName = "game-controller";
-          else if (route.name === "reminders") iconName = "alarm";
+          else if (route.name === "schedule") iconName = "alarm";
           else if (route.name === "profile") iconName = "person";
 
           return <Ionicons name={iconName} size={size} color={color} />;
@@ -22,7 +22,7 @@ export default function TabLayout() {
     >
       <Tabs.Screen name="home" options={{ title: "Home" }} />
       <Tabs.Screen name="activities" options={{ title: "Activities" }} />
-      <Tabs.Screen name="reminders" options={{ title: "Reminders" }} />
+      <Tabs.Screen name="schedule" options={{ title: "Schedule" }} />
       <Tabs.Screen name="profile" options={{ title: "Profile" }} />
     </Tabs>
   );
