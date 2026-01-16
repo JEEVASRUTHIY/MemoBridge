@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "expo-router";
 import {
   View,
   Text,
@@ -42,6 +43,8 @@ const activities = [
 ];
 
 export default function ActivitiesScreen() {
+  const router = useRouter();
+
   return (
     <LinearGradient
       colors={["#EAF2FF", "#F5F9FF", "#FFFFFF"] as const}
@@ -54,7 +57,15 @@ export default function ActivitiesScreen() {
         </Text>
 
         {activities.map((item, index) => (
-          <TouchableOpacity key={index} activeOpacity={0.85}>
+          <TouchableOpacity
+            key={index}
+            activeOpacity={0.85}
+            onPress={() => {
+              if (item.title === "Memory Games") {
+                router.push("/memory-game");
+              }
+            }}
+          >
             <LinearGradient colors={item.color} style={styles.card}>
               <Text style={styles.icon}>{item.icon}</Text>
 
