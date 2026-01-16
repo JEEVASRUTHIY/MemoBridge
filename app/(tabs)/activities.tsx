@@ -64,6 +64,13 @@ export default function ActivitiesScreen() {
               if (item.title === "Memory Games") {
                 router.push("/memory-game");
               }
+               if (item.title === "Music Therapy") {
+      router.push("/(tabs)/music-therapy");
+    }
+    if (item.title === "Light Exercises") {
+  router.push("/light-exercises");
+}
+
             }}
           >
             <LinearGradient colors={item.color} style={styles.card}>
