@@ -14,10 +14,11 @@ const screenWidth = Dimensions.get("window").width;
 
 export default function Home() {
   return (
-    <LinearGradient
-      colors={["#EEF2FF", "#F8FAFF", "#FFFFFF"]}
-      style={{ flex: 1 }}
-    >
+   <LinearGradient
+  colors={["#EEF4FF", "#F8FAFF", "#FFFFFF"]}
+  style={{ flex: 1 }}
+>
+
       <ScrollView
         contentContainerStyle={styles.container}
         showsVerticalScrollIndicator={false}
@@ -128,7 +129,8 @@ const styles = StyleSheet.create({
   },
 
   card: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "rgba(255,255,255,0.7)"
+,
     borderRadius: 24,
     padding: 18,
     elevation: 4,
